@@ -14,7 +14,7 @@ temperatura = st.number_input(
 
 if st.button("Evaluar"):
 
-   if 6.0 <=ph <= and 20.0 <=temperatura <=25.0:
+   if pH >= 6 and temperatura >= 20 or pH<= 7 and temperatura <=25
       resultado = "Lote aprobado"
    else:
        resultado = "Lote no aprobado"
