@@ -1,0 +1,2 @@
+# Lotes
+Actividad 7
