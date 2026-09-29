@@ -1,5 +1,8 @@
 import streamlit as st
 
+st.sidebar.title("Actividad 7")
+st.sidebar.write("Valeria Fernandez Castillo, 3L, FCQ")
+
 st.title("Evaluación de un lote")
 
 pH = st.number_input(
@@ -13,10 +16,10 @@ temperatura = st.number_input(
 )
 
 if st.button("Evaluar"):
-
-   if pH >= 6 and temperatura >= 20 or pH<= 7 and temperatura <=25
-      resultado = "Lote aprobado"
+   if (6.0 <= pH <= 7.0):
+       resultado = "Lote aprobado"
+   elif (20 <= temperatura <= 25):
+       resultado = "Lote aprobado"
    else:
-       resultado = "Lote no aprobado"
-       
+       resultado = "Lote no aprobado"      
     st.write(f"Resultado: {resultado}")
